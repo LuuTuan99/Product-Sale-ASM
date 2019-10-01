@@ -14,7 +14,7 @@ public class Product {
 
     @ManyToOne
     @JoinColumn(name = "salesID")
-    private Product product;
+    private Sale sale;
 
     public long getProductId() {
         return productId;
@@ -56,11 +56,11 @@ public class Product {
         this.price = price;
     }
 
-    public Product getProduct() {
-        return product;
+    public Sale getSale() {
+        return sale;
     }
 
-    public void setProduct(Product product) {
-        this.product = product;
+    public void setSale(Sale sale) {
+        this.sale = sale;
     }
 }
